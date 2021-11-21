@@ -1,0 +1,22 @@
+git init  // 로컬 저장소를 만든다. (기본적으로 master 가 뜬다.)
+
+git remote add origin [깃 레포지토리 주소]
+//git remote add 원하는 이름 [깃 레포지토리 주소]
+
+git remote -v  // 깃에 잘 연결되었는지 확인해준다.
+
+git pull origin master // 필수!!!!
+
+// pull 안될 때 -> git clean -d -f -f or git stash && git pull origin master && git stash pop
+
+git status // 커밋이 필요한 파일이 있는지 본다. 빨간색은 커밋이 필요하다.
+
+git add -A // 모든 파일을 추가한다.
+
+git status // 빨간색이 모두 초록색이 된 것을 확인한다.
+
+git commit -m "커밋 메세지" //커밋한다. 커밋 메시지는 되도록 한글로, 변경한 기능에 대해 작성해 준다.
+
+// git log // 작성자가 누구인지, 언제 작성한 커밋인지, 브랜치는 어디인지 확인해준다.
+
+git push -u origin master
